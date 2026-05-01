@@ -1,0 +1,59 @@
+.mtg-deck-box {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px 16px;
+  max-width: 420px;
+  background: #fafafa;
+  font-family: system-ui, sans-serif;
+  position: relative;
+}
+
+.mtg-deck-box h2 {
+  margin: 8px 0;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+}
+
+.mtg-deck-box ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 6px 0 10px;
+}
+
+.mtg-deck-box li {
+  margin: 2px 0;
+}
+
+.mtg-card-link {
+  color: #0055aa;
+  text-decoration: none;
+}
+
+.mtg-card-link:hover {
+  text-decoration: underline;
+}
+
+.mtg-card-preview {
+  position: absolute;
+  top: 8px;
+  right: -260px;
+  width: 250px;
+  pointer-events: none;
+  display: none;
+  z-index: 10;
+}
+
+.mtg-card-preview img {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 800px) {
+  .mtg-card-preview {
+    position: static;
+    margin-top: 10px;
+    width: 100%;
+  }
+}
